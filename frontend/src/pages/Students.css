@@ -1,0 +1,641 @@
+.modern-students-page {
+width: 100%;
+max-width: 1600px;
+margin: 0 auto;
+padding-bottom: 40px;
+}
+
+/* ================================
+PAGE HEADER
+================================ */
+
+.modern-page-header {
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+gap: 24px;
+margin-bottom: 26px;
+}
+
+.modern-breadcrumb {
+margin-bottom: 8px;
+color: #7b8794;
+font-size: 12px;
+font-weight: 600;
+}
+
+.modern-page-header h1 {
+margin: 0;
+color: #172b4d;
+font-size: 30px;
+font-weight: 750;
+letter-spacing: -0.7px;
+}
+
+.modern-page-header p {
+margin: 7px 0 0;
+color: #7b8794;
+font-size: 14px;
+}
+
+/* ================================
+BUTTONS
+================================ */
+
+.modern-primary-button {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+min-height: 44px;
+padding: 0 18px;
+border: none;
+border-radius: 9px;
+background: #17324d;
+color: #ffffff;
+font-size: 13px;
+font-weight: 650;
+box-shadow: 0 5px 14px rgba(23, 50, 77, 0.16);
+transition: all 0.2s ease;
+}
+
+.modern-primary-button:hover {
+background: #10263a;
+transform: translateY(-1px);
+box-shadow: 0 8px 18px rgba(23, 50, 77, 0.2);
+}
+
+.modern-primary-button span {
+font-size: 18px;
+line-height: 1;
+}
+
+.modern-primary-button:disabled {
+opacity: 0.6;
+cursor: not-allowed;
+transform: none;
+}
+
+.modern-outline-button {
+min-height: 42px;
+padding: 0 16px;
+border: 1px solid #dfe5ea;
+border-radius: 9px;
+background: #ffffff;
+color: #536273;
+font-size: 13px;
+font-weight: 600;
+transition: all 0.2s ease;
+}
+
+.modern-outline-button:hover {
+border-color: #17324d;
+color: #17324d;
+background: #f7f9fb;
+}
+
+/* ================================
+STATISTICS
+================================ */
+
+.modern-student-stats {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 18px;
+margin-bottom: 24px;
+}
+
+.modern-student-stat {
+display: flex;
+align-items: center;
+gap: 15px;
+min-height: 118px;
+padding: 20px;
+background: #ffffff;
+border: 1px solid #e5e9ee;
+border-radius: 14px;
+box-shadow: 0 3px 12px rgba(20, 35, 45, 0.045);
+transition:
+transform 0.2s ease,
+box-shadow 0.2s ease;
+}
+
+.modern-student-stat:hover {
+transform: translateY(-2px);
+box-shadow: 0 8px 22px rgba(20, 35, 45, 0.08);
+}
+
+.modern-stat-icon {
+width: 48px;
+height: 48px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 12px;
+font-size: 21px;
+}
+
+.modern-stat-icon.blue {
+background: #edf3f9;
+}
+
+.modern-stat-icon.green {
+background: #edf7f1;
+}
+
+.modern-stat-icon.purple {
+background: #f3effa;
+}
+
+.modern-stat-icon.orange {
+background: #fff4e8;
+}
+
+.modern-student-stat span {
+display: block;
+margin-bottom: 4px;
+color: #7b8794;
+font-size: 12px;
+font-weight: 600;
+}
+
+.modern-student-stat strong {
+display: block;
+color: #172b4d;
+font-size: 25px;
+font-weight: 750;
+line-height: 1.1;
+}
+
+.modern-student-stat small {
+display: block;
+margin-top: 5px;
+color: #9aa5b1;
+font-size: 11px;
+}
+
+/* ================================
+MAIN CARDS
+================================ */
+
+.modern-student-card {
+margin-bottom: 24px;
+overflow: hidden;
+background: #ffffff;
+border: 1px solid #e5e9ee;
+border-radius: 14px;
+box-shadow: 0 3px 12px rgba(20, 35, 45, 0.045);
+}
+
+.modern-card-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px;
+padding: 22px 24px;
+border-bottom: 1px solid #edf0f2;
+}
+
+.modern-card-header h2 {
+margin: 0;
+color: #172b4d;
+font-size: 18px;
+font-weight: 700;
+}
+
+.modern-card-header p {
+margin: 5px 0 0;
+color: #84909d;
+font-size: 13px;
+}
+
+.modern-record-count {
+padding: 7px 12px;
+border-radius: 20px;
+background: #edf3f8;
+color: #31516d;
+font-size: 12px;
+font-weight: 650;
+}
+
+/* ================================
+FORM
+================================ */
+
+.modern-student-form {
+padding: 24px;
+}
+
+.modern-form-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 18px 20px;
+}
+
+.modern-field {
+display: flex;
+flex-direction: column;
+gap: 7px;
+}
+
+.modern-field label {
+color: #43515e;
+font-size: 12px;
+font-weight: 650;
+}
+
+.modern-field input,
+.modern-field select {
+width: 100%;
+height: 44px;
+padding: 0 13px;
+border: 1px solid #dfe5e9;
+border-radius: 8px;
+outline: none;
+background: #ffffff;
+color: #263746;
+font-size: 13px;
+transition:
+border-color 0.2s ease,
+box-shadow 0.2s ease;
+}
+
+.modern-field input::placeholder {
+color: #a2acb6;
+}
+
+.modern-field input:focus,
+.modern-field select:focus {
+border-color: #3d6f91;
+box-shadow: 0 0 0 3px rgba(61, 111, 145, 0.09);
+}
+
+.modern-full-field {
+grid-column: 1 / -1;
+}
+
+.modern-form-footer {
+display: flex;
+justify-content: flex-end;
+gap: 10px;
+margin-top: 23px;
+padding-top: 20px;
+border-top: 1px solid #edf0f2;
+}
+
+/* ================================
+SEARCH
+================================ */
+
+.modern-student-search {
+padding: 18px 24px;
+background: #fafbfc;
+border-bottom: 1px solid #edf0f2;
+}
+
+.modern-search-input {
+position: relative;
+width: 100%;
+max-width: 620px;
+display: flex;
+align-items: center;
+}
+
+.modern-search-input > span {
+position: absolute;
+left: 14px;
+color: #8b98a5;
+font-size: 20px;
+pointer-events: none;
+}
+
+.modern-search-input input {
+width: 100%;
+height: 44px;
+padding: 0 42px;
+border: 1px solid #dfe5e9;
+border-radius: 9px;
+outline: none;
+background: #ffffff;
+color: #263746;
+font-size: 13px;
+transition: all 0.2s ease;
+}
+
+.modern-search-input input:focus {
+border-color: #3d6f91;
+box-shadow: 0 0 0 3px rgba(61, 111, 145, 0.09);
+}
+
+.modern-search-input input::placeholder {
+color: #a0aab4;
+}
+
+.modern-search-input button {
+position: absolute;
+right: 9px;
+width: 27px;
+height: 27px;
+padding: 0;
+border: none;
+border-radius: 50%;
+background: #eef1f4;
+color: #667482;
+font-size: 17px;
+line-height: 1;
+}
+
+.modern-search-input button:hover {
+background: #e1e6ea;
+}
+
+/* ================================
+TABLE
+================================ */
+
+.modern-student-table-wrapper {
+width: 100%;
+overflow-x: auto;
+}
+
+.modern-student-table {
+width: 100%;
+min-width: 1000px;
+border-collapse: collapse;
+}
+
+.modern-student-table thead {
+background: #f8fafb;
+}
+
+.modern-student-table th {
+padding: 13px 18px;
+border-bottom: 1px solid #e7ebee;
+color: #74808c;
+font-size: 10px;
+font-weight: 750;
+letter-spacing: 0.45px;
+text-align: left;
+white-space: nowrap;
+}
+
+.modern-student-table td {
+padding: 15px 18px;
+border-bottom: 1px solid #edf0f2;
+color: #52606d;
+font-size: 13px;
+vertical-align: middle;
+}
+
+.modern-student-table tbody tr {
+background: #ffffff;
+transition: background 0.15s ease;
+}
+
+.modern-student-table tbody tr:hover {
+background: #fafcfd;
+}
+
+.modern-student-table tbody tr:last-child td {
+border-bottom: none;
+}
+
+/* ================================
+STUDENT INFO
+================================ */
+
+.modern-student-info {
+display: flex;
+align-items: center;
+gap: 11px;
+min-width: 190px;
+}
+
+.modern-student-avatar {
+width: 39px;
+height: 39px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+background: #edf3f8;
+color: #31516d;
+font-size: 12px;
+font-weight: 750;
+}
+
+.modern-student-info strong {
+display: block;
+color: #233445;
+font-size: 13px;
+font-weight: 650;
+}
+
+.modern-student-info small {
+display: block;
+margin-top: 3px;
+color: #98a3ad;
+font-size: 10px;
+}
+
+/* ================================
+BADGES
+================================ */
+
+.modern-class-badge {
+display: inline-flex;
+align-items: center;
+padding: 5px 9px;
+border-radius: 6px;
+background: #edf7f1;
+color: #2f6b4f;
+font-size: 11px;
+font-weight: 650;
+}
+
+.modern-gender-badge {
+display: inline-flex;
+align-items: center;
+padding: 5px 9px;
+border-radius: 6px;
+background: #f0f3f6;
+color: #596b7b;
+font-size: 11px;
+font-weight: 600;
+}
+
+.modern-admission-number {
+color: #31516d;
+font-size: 12px;
+font-weight: 650;
+}
+
+.modern-parent-name {
+color: #52606d;
+font-size: 12px;
+}
+
+.modern-phone {
+color: #697784;
+font-size: 12px;
+white-space: nowrap;
+}
+
+/* ================================
+ACTION BUTTONS
+================================ */
+
+.modern-action-buttons {
+display: flex;
+align-items: center;
+gap: 7px;
+}
+
+.modern-edit-button,
+.modern-delete-button {
+height: 32px;
+padding: 0 10px;
+border-radius: 7px;
+font-size: 11px;
+font-weight: 650;
+transition: all 0.2s ease;
+}
+
+.modern-edit-button {
+border: 1px solid #dbe5ec;
+background: #f1f6fa;
+color: #31516d;
+}
+
+.modern-edit-button:hover {
+background: #e5eef5;
+}
+
+.modern-delete-button {
+border: 1px solid #f0dddd;
+background: #fcf1f1;
+color: #a94747;
+}
+
+.modern-delete-button:hover {
+background: #f8e5e5;
+}
+
+/* ================================
+LOADING
+================================ */
+
+.modern-student-loading,
+.modern-student-empty {
+padding: 70px 25px;
+text-align: center;
+}
+
+.modern-loading-spinner {
+width: 38px;
+height: 38px;
+margin: 0 auto 15px;
+border: 3px solid #e6ebef;
+border-top-color: #31516d;
+border-radius: 50%;
+animation: modernStudentSpin 0.8s linear infinite;
+}
+
+@keyframes modernStudentSpin {
+to {
+transform: rotate(360deg);
+}
+}
+
+.modern-student-loading h3,
+.modern-student-empty h3 {
+margin: 0 0 6px;
+color: #263746;
+font-size: 16px;
+}
+
+.modern-student-loading p,
+.modern-student-empty p {
+margin: 0;
+color: #8b97a3;
+font-size: 12px;
+}
+
+.modern-empty-icon {
+margin-bottom: 12px;
+font-size: 42px;
+}
+
+/* ================================
+RESPONSIVE
+================================ */
+
+@media (max-width: 1200px) {
+.modern-student-stats {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
+
+@media (max-width: 800px) {
+.modern-page-header {
+align-items: flex-start;
+flex-direction: column;
+}
+
+.modern-page-header .modern-primary-button {
+    width: 100%;
+}
+
+.modern-form-grid {
+    grid-template-columns: 1fr;
+}
+
+.modern-full-field {
+    grid-column: auto;
+}
+
+.modern-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.modern-record-count {
+    align-self: flex-start;
+}
+
+
+}
+
+@media (max-width: 600px) {
+.modern-student-stats {
+grid-template-columns: 1fr;
+}
+
+
+.modern-student-form {
+    padding: 18px;
+}
+
+.modern-student-search {
+    padding: 15px 18px;
+}
+
+.modern-card-header {
+    padding: 18px;
+}
+
+.modern-form-footer {
+    flex-direction: column-reverse;
+}
+
+.modern-form-footer button {
+    width: 100%;
+}
+
+.modern-page-header h1 {
+    font-size: 25px;
+}
+
+}

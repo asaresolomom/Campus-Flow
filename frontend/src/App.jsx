@@ -5,6 +5,8 @@ import {
     Navigate
 } from "react-router-dom";
 
+import { Analytics } from "@vercel/analytics/react";
+
 // =====================================================
 // PAGES
 // =====================================================
@@ -45,6 +47,8 @@ function App() {
     return (
 
         <BrowserRouter>
+
+            <Analytics />
 
             <Routes>
 
